@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VsIM Inventory Management</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="home.css">
+    
+    <!-- Link for icons (Font Awesome or Boxicons) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1>VsIM Inventory Management</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Inventory</h2>
+            <button id="addNewItem">Add New Item</button>
+            <nav>
+                <ul>
+                    <li><a href="#" id="products">Products</a></li>
+                    <li><a href="#" id="categories">Categories</a></li>
+                    <li><a href="#" id="itemArchive">Item Archive</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <h2>Available Products List</h2>
+            <p>Showing all available products:</p>
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Image</th>
+                        <th>Edit</th>
+                        <th>Delete</th> <!-- Added Delete Column -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blue T-Shirt</td>
+                        <td>$16.99</td>
+                        <td>Shirts</td>
+                        <td><a href="#">View</a></td>
+                        <td><button class="editBtn">Edit</button></td>
+                        <td><button class="deleteBtn">Delete</button></td> <!-- Added Delete Button -->
+                    </tr>
+                    <!-- Additional rows will be dynamically added -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <!-- Firebase and app-specific JavaScript -->
+    <script type="module" src="home.js"></script> <!-- Assuming you moved the script to home.js -->
+
+</body>
+</html>
